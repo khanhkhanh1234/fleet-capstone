@@ -1,0 +1,10 @@
+namespace: capstone
+helm:
+  releaseName: capstone
+  repo: https://github.com/khanhkhanh1234/fleet-capstone.git
+  chart: capstone-chart
+targetCustomizations:
+- name: local
+  clusterSelector:
+    matchLabels:
+      env: local
